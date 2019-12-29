@@ -37,17 +37,20 @@ public class RegisterActivity extends AppCompatActivity {
         mbtnEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Chamar o Metodo Private createUser
                 createUser();
             }
+        });
+    }
 
             private void createUser() {
-               String email = mEditEmail.getText().toString();
-               String senha = mEditPassword.getText().toString();
+                String email = mEditEmail.getText().toString();
+                String senha = mEditPassword.getText().toString();
 
-               if (email == null || email.isEmpty() || senha == null || senha.isEmpty()){
-                   Toast.makeText(this,"Senha e Email devem ser preenchidos", Toast.LENGTH_SHORT).show();
-                   return;
-               }
+                if (email==null || email.isEmpty() || senha==null || senha.isEmpty()){
+                    Toast.makeText(this,"Senha e Email devem ser preenchidos", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, senha)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -64,6 +67,6 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         });
             }
-        });
+
     }
-}
+
