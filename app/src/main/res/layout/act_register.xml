@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Selected_photo" />
 
 
     <EditText
@@ -69,5 +69,33 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edit_password"
         app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+    <Button
+        android:id="@+id/btn_Selected_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_buttom_img_rounded"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/common_open_on_phoneoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_color="@android:color/holo_green_dark"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Selected_photo"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Selected_photo"
+        app:layout_constraintStart_toStartOf="@+id/btn_Selected_photo"
+        app:layout_constraintTop_toTopOf="@+id/btn_Selected_photo" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Selected_photo"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Selected_photo"
+        app:layout_constraintStart_toStartOf="@+id/btn_Selected_photo"
+        app:layout_constraintTop_toTopOf="@+id/btn_Selected_photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
