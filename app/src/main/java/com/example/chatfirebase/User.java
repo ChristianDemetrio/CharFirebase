@@ -2,9 +2,12 @@ package com.example.chatfirebase;
 
 public class User {
 
-    private final String uuid;
-    private final String username;
-    private final String profileUrl;
+    private String username;
+    private String profileUrl;
+    private  String uuid;
+
+    public User(){
+    }
 
     public User(String usid, String username, String profileUrl) {
         this.uuid = usid;
