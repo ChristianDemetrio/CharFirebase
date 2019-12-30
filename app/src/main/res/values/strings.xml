@@ -5,4 +5,6 @@
     <string name="Insert">Cadastrar</string>
     <string name="Foto">Strind/photo</string>
     <string name="common_open_on_phoneoto">Foto</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">logout</string>
 </resources>
